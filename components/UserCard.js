@@ -1,8 +1,11 @@
 import Divider from "../components/Divider.js"
+import Image from "next/image"
 
 function UserCard() {
     return (
-        <div className="user-card bg-white p-6 sticky top-10">
+        <>
+        <div className="sticky-header  sticky top-20">
+        <div className="user-card bg-white p-6">
             <div className="user-info flex flex-row">
             <div className="user-icon w-10 h-10 bg-black rounded-full justify-center align-middle text-white text-center flex font-semibold items-center mr-4">DL</div>
             <div className="user-info-detail">
@@ -28,15 +31,25 @@ function UserCard() {
                  <div className="">ECTS</div>
                     <div className="text-4xl font-bold">12,00</div>
                 </div>
-                </div>
+                </div>  
                 <h2 className="font-bold text-md mt-8">Semesterfortschritt</h2>
                 <div className="mb-4">2/40 Wochen</div>
                 <div className="progress-bar h-4 w-full bg-jku-background relative">
-                    <div className="absoloute left-0 top-0 w-44 bg-jku-light-blue h-full z-2"></div>
+                    <div className="absoloute left-0 top-0 w-44 color-yeah h-full z-2"></div>
                 </div>
             </div>
-
         </div>
+
+        <div className="links p-6 mt-4 bg-white">
+        <div className="font-bold text-md mb-2">Links</div>
+
+            <Image src="/Link_1.png" width="74" height="60" objectFit='contain'
+></Image>
+
+            <a href="" className="link">Link 2</a>
+        </div>
+        </div>
+  </>
     )
 }
 
