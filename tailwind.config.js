@@ -8,6 +8,9 @@ module.exports = {
         'jku-light-blue':'#4FB0BF',
         'jku-blue':'#4FB0BF',
         'jku-background':'#EDEFF2',
+      },
+      fontFamily: {
+        body: ['Montserrat']
       }
     },
   },

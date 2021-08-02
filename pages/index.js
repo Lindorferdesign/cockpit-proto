@@ -7,10 +7,9 @@ import Image from "next/image"
 
 
 
-
 export default function Home() {
   return (
-    <div className="">
+    <div className="font-body">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,8 +19,10 @@ export default function Home() {
            <div className="jku-logo h-16 w-full bg-black"></div>
            <div className="navigation">
             <ul>
-              <li></li>
-              <li></li>
+              <li className="p-4 bg-gray-40 font-medium">
+                <div className="">Link 1</div>
+              </li>
+              <li>Link 2</li>
               <li></li>
               <li></li>
               <li></li>
@@ -30,16 +31,16 @@ export default function Home() {
       </div>
 
       <div className="content flex-1 overflow-x-scroll bg-jku-background">
-        <div className="main-nav h-16 w-full  sticky top-0"></div>
-        <div className="content-header p-4 h-64 w-full bg-jku-light-blue d-flex -mt-16">
+        <div className="main-nav h-16 w-full sticky top-0 z-1 "></div>
+        <div className="content-header p-4 h-64 w-full color-yeah d-flex -mt-16">
           <div className="flex max-w-6xl m-auto h-full items-center">
-            <img src="{require('../public/assets/images/Logo_Bildmarke.png')}"></img>
             <Image
-              src="/images/Logo_Bildmarke.png"
-              width="70"
-              height="70"
+              src="/Logo_Bildmarke.png"
+              width="140"
+              height="140"
+              className=""
             />
-            <h2 className="text-5xl uppercase font-bold">Dein Studium auf <br></br>einem Blick.</h2>
+            <h2 className="ml-6 text-5xl uppercase font-bold">Dein Studium auf <br></br>einem Blick.</h2>
           </div>
         </div>
 
@@ -47,9 +48,9 @@ export default function Home() {
           <div className="main-content col-span-2 w-full h-auto">
 
             <div className="notififications my-6">
-              <div className="header-text">
+              <div className="header-text flex justify-between">
                 <h2 className="text-2xl font-semibold">Ungelesene Nachrichten</h2>
-                <div className="alle-anzeigen"></div>
+                <div className="alle-anzeigen underline font-bold cursor-pointer">Alle anzeigen</div>
               </div>
               <Notification></Notification>
               <Notification></Notification>
