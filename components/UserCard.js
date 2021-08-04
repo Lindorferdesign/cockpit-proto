@@ -35,18 +35,33 @@ function UserCard() {
                 <h2 className="font-bold text-md mt-8">Semesterfortschritt</h2>
                 <div className="mb-4">2/40 Wochen</div>
                 <div className="progress-bar h-4 w-full bg-jku-background relative">
-                    <div className="absoloute left-0 top-0 w-44 color-yeah h-full z-2"></div>
+                    <div className="absoloute left-0 top-0 w-44 bg-jku-light-blue h-full z-2"></div>
                 </div>
             </div>
         </div>
 
         <div className="links p-6 mt-4 bg-white">
         <div className="font-bold text-md mb-2">Links</div>
-
-            <Image src="/Link_1.png" width="74" height="60" objectFit='contain'
-></Image>
-
-            <a href="" className="link">Link 2</a>
+        <div className="Links flex flex-wrap transition-all duration-300">
+        <div className="p-4 hover:bg-gray-50 w-4/12 cursor-pointer">
+            <Image src="/Link_1.png" width="74" height="60" objectFit='contain'></Image>
+        </div>
+        <div className="p-4 hover:bg-gray-50  w-4/12 cursor-pointer transition-all duration-300">
+            <Image src="/Link_1.png" width="74" height="60" objectFit='contain'></Image>
+        </div>
+        <div className="p-4 hover:bg-gray-50  w-4/12 cursor-pointer">
+            <Image src="/Link_1.png" width="74" height="60" objectFit='contain'></Image>
+        </div>
+        <div className="p-4 hover:bg-gray-50  w-4/12 cursor-pointer">
+            <Image src="/Link_1.png" width="74" height="60" objectFit='contain'></Image>
+        </div>
+        <div className="p-4 hover:bg-gray-50  w-4/12 cursor-pointer">
+            <Image src="/Link_1.png" width="74" height="60" objectFit='contain'></Image>
+        </div>
+            <div className="p-4 hover:bg-gray-50  w-4/12 cursor-pointer">
+            <Image src="/Link_1.png" width="74" height="60" objectFit='contain'></Image>
+        </div>
+        </div>
         </div>
         </div>
   </>

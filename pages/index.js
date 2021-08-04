@@ -32,7 +32,7 @@ export default function Home() {
 
       <div className="content flex-1 overflow-x-scroll bg-jku-background">
         <div className="main-nav h-16 w-full sticky top-0 z-1 "></div>
-        <div className="content-header p-4 h-64 w-full color-yeah d-flex -mt-16">
+        <div className="content-header p-4 h-72 w-full d-flex -mt-16 bg-jku-light-blue">
           <div className="flex max-w-6xl m-auto h-full items-center">
             <Image
               src="/Logo_Bildmarke.png"
@@ -49,24 +49,26 @@ export default function Home() {
 
             <div className="notififications my-6">
               <div className="header-text flex justify-between">
-                <h2 className="text-2xl font-semibold">Ungelesene Nachrichten</h2>
+                <h2 className="text-2xl font-bold">Ungelesene Nachrichten</h2>
                 <div className="alle-anzeigen underline font-bold cursor-pointer">Alle anzeigen</div>
               </div>
               <Notification></Notification>
               <Notification></Notification>
-              <Notification></Notification>              
             </div>
 
-            <div className="news-section my-12">
+            <div className="news-section my-20">
               <div className="section-heading flex justify-between mb-4">
-                <h2 className="text-2xl font-semibold mb-2">Meine Woche</h2>
-                <a href="#">alle anzeigen</a>
+                <h2 className="text-2xl font-bold">Meine Woche</h2>
+                <div className="alle-anzeigen underline font-bold cursor-pointer">HEUTE</div>
             </div>
             <MeineWoche></MeineWoche>
             </div>
             
-            <div className="news-section my-12">
-            <h2 className="text-2xl font-semibold">Ungelesene Nachrichten</h2>
+            <div className="news-section my-20">
+            <div className="header-text flex justify-between">
+            <h2 className="text-2xl font-bold">KUSSS News</h2>
+            <div className="alle-anzeigen underline font-bold cursor-pointer">Alle anzeigen</div>
+            </div>
             <News></News>
             <News></News>
             <News></News>

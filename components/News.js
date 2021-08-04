@@ -8,7 +8,7 @@ function News() {
              <Image src="/news_icon.png" width="40" height="40" className="mr-2 flex"></Image>
             </div>
         <div className="notifiaction-info">
-            <div className="news-date text-gray-500">Mo., 04.11.2021</div>
+            <div className="news-date font-medium text-gray-500">Mo., 04.11.2021</div>
                 <div className="news-title font-semibold">MUSSS & MUSSS O.C. Angebot 2021S - Anmeldung noch möglich</div>
             </div>
     </div>
